@@ -1,5 +1,8 @@
 from time import sleep
 from threading import Thread
+import webbrowser
+
+webbrowser.open_new('https://youtu.be/dajEFqQTyM8?si=ctSgBqxl0ejoCpfw')
 
 
 class Knight(Thread):
