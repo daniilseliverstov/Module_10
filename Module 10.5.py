@@ -7,16 +7,15 @@ def read_info(name):
     with open(name, 'r') as file:
         while line := file.readline():
             all_data.append(line)
-    return all_data
 
 
 filenames = [f'./file {number}.txt' for number in range(1, 5)]
 
 start1 = datetime.now()
-res1 = read_info('file 1.txt')
-res2 = read_info('file 2.txt')
-res3 = read_info('file 3.txt')
-res4 = read_info('file 4.txt')
+read_info('file 1.txt')
+read_info('file 2.txt')
+read_info('file 3.txt')
+read_info('file 4.txt')
 end1 = datetime.now()
 time1 = end1 - start1
 print(f'time line: {time1}')
